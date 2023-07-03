@@ -2,7 +2,7 @@
 let gameTime = 60;
 let firstMove = true;
 let compl = false;
-let path = '..img/energy.png';
+let path = '/img/energy.png';
 
 let rand = (max) => {
     return Math.round(Math.random() * max)
@@ -96,9 +96,9 @@ $(document).ready(function () {
 
 $('#selPic').on('change', function () {
     switch (this.selectedIndex) {
-        case 0: path = '..img/energy.png'; break;
-        case 1: path = '..img/mario.jpeg'; break;
-        case 2: path = '..img/naruto.jpg'; break;
+        case 0: path = '/img/energy.png'; break;
+        case 1: path = '/img/mario.jpeg'; break;
+        case 2: path = '/img/naruto.jpg'; break;
     }
     $('.source-box').each(function (ind, elem) {
         elem.innerHTML = `<div class="source-box-img" id="${ind}"></div>`;
