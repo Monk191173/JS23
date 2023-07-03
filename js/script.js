@@ -2,7 +2,7 @@
 let gameTime = 60;
 let firstMove = true;
 let compl = false;
-let path = '../img/energy.png';
+let path = '/../img/energy.png';
 
 let rand = (max) => {
     return Math.round(Math.random() * max)
